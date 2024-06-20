@@ -1,11 +1,11 @@
 <?php
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 /**
- * MarkdownParse Katex for Typecho (Modified by memset0)
+ * MarkdownParse Katex for Typecho (Modified by memset0) (Updated by lclichen)
  * 
  * @package MardownKatex
- * @author zyuzhi & memset0
- * @version 1.0.1.233
+ * @author zyuzhi & memset0 & lclichen
+ * @version 1.0.1.235
  * @link https://blog.zyuzhi.me
  */
 class MarkdownKatex_Plugin implements Typecho_Plugin_Interface
@@ -63,8 +63,8 @@ class MarkdownKatex_Plugin implements Typecho_Plugin_Interface
 
     public static function footer($content) {
         ?>
-<link href="//cdn.bootcss.com/KaTeX/0.10.1/katex.min.css" rel="stylesheet">
-<script src="//cdn.bootcss.com/KaTeX/0.10.1/katex.min.js"></script>
+<link href="//cdn.bootcss.com/KaTeX/0.16.9/katex.min.css" rel="stylesheet">
+<script src="//cdn.bootcss.com/KaTeX/0.16.9/katex.min.js"></script>
 <script>
 var tmp = document.getElementsByTagName('katex-inline');
 for (var i = 0; i < tmp.length; i++) { var t = tmp[i].innerHTML, e; console.log(katex.render(tmp[i].innerText, tmp[i], {displayMode: false, throwOnError: false})); }
